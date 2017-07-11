@@ -1,0 +1,47 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder
+	xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<g:HTMLPanel>
+		<h1 class="page-header">
+			Editar vivienda
+			<g:Anchor ui:field="update" href="javascript:;" styleName="btn btn-success pull-right">Actualizar</g:Anchor>
+		</h1>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="form-horizontal" role="form">
+					<div class="form-group" ui:field="nombreFormGroup">
+						<label class="col-sm-2 control-label">Nombre *</label>
+						<div class="col-sm-10">
+							<input ui:field="nombre" type="text" class="form-control" placeholder="Nombre"/>
+							<span class="help-block" ui:field="nombreError"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">Situación</label>
+						<div class="col-sm-10">
+							<textarea ui:field="situacion" class="form-control" placeholder="Situación">
+							</textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">Resumen</label>
+						<div class="col-sm-10">
+							<textarea ui:field="resumen" class="form-control" placeholder="Resumen">
+							</textarea>
+						</div>
+					</div>
+					<div class="form-group" ui:field="capacidadFormGroup">
+						<label class="col-sm-2 control-label">Capacidad</label>
+						<div class="col-sm-10">
+							<input ui:field="capacidad" type="number" class="form-control" placeholder="Capacidad"/>
+							<span class="help-block" ui:field="capacidadError"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<g:SimplePanel ui:field="bottom"/>
+	</g:HTMLPanel>
+</ui:UiBinder>

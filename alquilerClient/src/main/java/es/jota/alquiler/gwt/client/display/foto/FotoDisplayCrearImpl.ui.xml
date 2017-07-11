@@ -1,0 +1,50 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder
+	xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:d="urn:import:es.jota.alquiler.gwt.client.widget.base">
+	<g:HTMLPanel>
+		<h1 class="page-header">
+			Crear foto
+			<g:Anchor ui:field="create" href="javascript:;" styleName="btn btn-success pull-right">Crear</g:Anchor>
+		</h1>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="form-horizontal" role="form">
+					<div class="form-group">
+						<label class="col-sm-2 control-label">Foto *</label>
+						<div class="col-sm-10">
+							<d:Dropzone ui:field="foto" action="/uploadFoto.spring"/>
+						</div>
+					</div>
+					<div class="form-group" ui:field="tituloFormGroup">
+						<label class="col-sm-2 control-label">Titulo *</label>
+						<div class="col-sm-10">
+							<input ui:field="titulo" type="text" class="form-control" placeholder="Titulo"/>
+							<span class="help-block" ui:field="tituloError"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">Tag</label>
+						<div class="col-sm-10">
+ 							<d:Suggest ui:field="tag" placeholder="Tag"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">Vivienda</label>
+						<div class="col-sm-10">
+							<d:Suggest ui:field="vivienda" placeholder="Vivienda"/>
+						</div>
+					</div>
+					<div class="form-group" ui:field="ordenFormGroup">
+						<label class="col-sm-2 control-label">Orden</label>
+						<div class="col-sm-10">
+							<input ui:field="orden" type="number" class="form-control" placeholder="Orden"/>
+							<span class="help-block" ui:field="ordenError"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder>

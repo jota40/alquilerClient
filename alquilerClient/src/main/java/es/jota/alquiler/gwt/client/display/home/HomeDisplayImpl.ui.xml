@@ -1,0 +1,25 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder
+	xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:c="urn:import:com.google.gwt.user.cellview.client"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:pager="urn:import:es.jota.utils.gwt.client.table.paginator">
+
+	<ui:import field='jota.server.enumerations.RolEnum.*' />
+	
+	<g:HTMLPanel>
+		<div class="panel panel-default">
+			<div class="panel-heading">Listado de viviendas</div>
+			<div class="panel-body">
+				<g:Anchor ui:field="reset" styleName="btn btn-danger">Reset</g:Anchor>
+				<g:Anchor ui:field="refresh" styleName="btn btn-warning">Refrescar</g:Anchor>
+				<a ui:field="create" class="btn btn-success pull-right configurable {PROPIETARIO.name} {ADMINISTRADOR.name}" href="#">+Nuevo</a>
+				<g:Anchor ui:field="misViviendas" styleName="btn btn-success pull-right configurable {PROPIETARIO.name}">Mis viviendas</g:Anchor>
+			</div>
+			<div class="table-responsive">
+				<c:CellTable ui:field="tabla" addStyleNames="table table-striped table-bordered table-hover table-condensed" pageSize="10"/>
+				<pager:PagerScrollerDisplay ui:field="paginator"/>
+			</div>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder>

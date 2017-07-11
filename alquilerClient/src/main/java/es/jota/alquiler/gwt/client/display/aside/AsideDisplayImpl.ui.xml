@@ -1,0 +1,21 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder
+	xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:d="urn:import:es.jota.utils.gwt.client.widget.display">
+
+	<ui:import field='jota.server.enumerations.RolEnum.*' />
+	
+	<g:HTMLPanel ui:field="menu" styleName="nav nav-pills nav-stacked" tag="ul">
+		<d:NavItem ui:field="home" class="always active" text="Home" place="HomePlace"/>
+
+		<d:NavItem ui:field="foto" class="{ADMINISTRADOR.name} {PROPIETARIO.name}" text="Fotos" place="FotoPlace"/>
+		<d:NavItem class="{ADMINISTRADOR.name} {PROPIETARIO.name}" text="equipamiento" />
+
+		<d:NavItem class="ViviendaPlace" text="Fotos" place="ViviendaPlace" />
+		<d:NavItem class="ViviendaPlace" text="Equipamiento "/>
+		<d:NavItem class="ViviendaPlace" text="Calendario" />
+		<d:NavItem class="ViviendaPlace" text="Precios" />
+		<d:NavItem class="ViviendaPlace" text="Observaciones" />
+	</g:HTMLPanel>
+</ui:UiBinder>

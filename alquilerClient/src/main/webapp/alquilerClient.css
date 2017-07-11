@@ -1,0 +1,24 @@
+/** Add css rules here for your application. */
+body {
+	padding-top: 50px;
+}
+
+.navigation {
+    background-color: #CFCFCF;
+    border: 1px solid #AFAFAF;
+    display: block;
+    height: 50%;
+    opacity: 0.6;
+    padding: 1%;
+    position: fixed;
+    right: -1.1%;
+    top: 9%;
+    width: 0;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+
+.table th {
+	text-align: center;	
+}

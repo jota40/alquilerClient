@@ -1,0 +1,12 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder
+	xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<g:HTMLPanel styleName="form-group">
+		<span ui:field="errorMsg" class="alert alert-danger hide">No se ha podido desconectar</span>
+		<a ui:field="usuario" class="btn btn-success" href="javascript:;"></a>
+		<small  ui:field="rol" class="navbar-form text-primary"></small>
+		<g:Anchor ui:field="desconectar" styleName="btn btn-default" href="javascript:;">Desconectar</g:Anchor>
+	</g:HTMLPanel>
+</ui:UiBinder>

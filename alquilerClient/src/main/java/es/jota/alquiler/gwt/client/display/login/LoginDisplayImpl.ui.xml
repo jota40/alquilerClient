@@ -1,0 +1,12 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder
+	xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<g:HTMLPanel styleName="form-group">
+		<span ui:field="errorMsg" class="alert alert-danger hide">Usuario y/o contraseña incorrecto/s</span>
+		<input ui:field="login" type="text" class="form-control" placeholder="Usuario">admin</input>
+		<input ui:field="pass" type="password" class="form-control" placeholder="Contraseña">admin</input>
+		<g:Anchor ui:field="conectar" styleName="btn btn-default" href="javascript:;">Conectar</g:Anchor>
+	</g:HTMLPanel>
+</ui:UiBinder>

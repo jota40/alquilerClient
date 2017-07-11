@@ -1,0 +1,14 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder	xmlns:ui="urn:ui:com.google.gwt.uibinder"
+				xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<g:HTMLPanel ui:field="dropzone">
+		<form ui:field="dropzoneForm" class="dropzone dz-clickable">
+			<div ui:field="mensaje" class="dz-message">
+				Arrastra el fichero o pincha aqui
+				<br/>
+				para subir una foto
+			</div>
+		</form>
+	</g:HTMLPanel>
+</ui:UiBinder>

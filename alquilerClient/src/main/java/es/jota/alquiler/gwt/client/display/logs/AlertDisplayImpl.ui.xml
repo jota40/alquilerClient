@@ -1,0 +1,10 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder	xmlns:ui="urn:ui:com.google.gwt.uibinder"
+				xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<g:HTMLPanel ui:field="alert" styleName="alert alert-dismissible alert-warning">
+		<button ui:field="close" type="button" class="close hidden" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>
+		<strong ui:field="titulo"/> <span ui:field="texto"/><br/>
+		<span ui:field="resultado"/>
+	</g:HTMLPanel>
+</ui:UiBinder> 
